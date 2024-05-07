@@ -31,12 +31,13 @@ services:
 
   mysql:
     image: mysql:5.7
-    command: --innodb-use-native-aio=0 && mysql -u root -proot nodedb < backup.sql
+    command: --innodb-use-native-aio=0
     container_name: mysql
     restart: always
     tty: true
     volumes:
       - ./mysql:/var/lib/mysql
+      - ./mysqlBackup/backup.sql:/docker-entrypoint-initdb.d/backup.sql
     environment:
       - MYSQL_DATABASE=nodedb
       - MYSQL_ROOT_PASSWORD=root

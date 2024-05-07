@@ -1,5 +1,4 @@
-mysql/*
-!mysql/backup.sql
+mysql/
 
 node_modules/
 

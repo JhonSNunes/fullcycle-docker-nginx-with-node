@@ -12,3 +12,6 @@ Run docker compose to up the images
 
 Access this page bellow to see the challenge result
 > http://localhost:8080/
+
+## Challenge Result
+![image](https://github.com/JhonSNunes/fullcycle-docker-nginx-with-node/assets/40320137/1b7c207d-db7d-428f-be7a-ad7804bf1a06)

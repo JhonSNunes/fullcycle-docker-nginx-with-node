@@ -1,0 +1,6 @@
+mysql/*
+!mysql/backup.sql
+
+node_modules/
+
+package-lock.json

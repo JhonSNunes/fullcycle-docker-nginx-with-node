@@ -1,6 +1,14 @@
 FROM node:18
 
-WORKDIR /usr/src/app
+WORKDIR /usr/src
+
+COPY . .
+
+RUN npm install -y
+
+RUN mkdir /usr/src/app && mkdir /usr/src/app/node_modules
+
+RUN ln -s node_modules /usr/src/app/node_modules
 
 EXPOSE 3000
 

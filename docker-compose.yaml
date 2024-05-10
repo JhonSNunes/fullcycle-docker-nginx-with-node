@@ -25,7 +25,7 @@ services:
       - myNetwork
     tty: true
     entrypoint: dockerize -wait tcp://mysql:3306 -timeout 20s docker-entrypoint.sh
-    command: node index.js
+    command: sh -c "npm install -y && node index.js"
     depends_on:
       - mysql
 

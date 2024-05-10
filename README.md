@@ -4,9 +4,6 @@ This repository is a challenge result of docker module in Full Cycle curse. The 
 ## How to use
 First, you need to clone this repository!
 
-After that you just run build script that will install some necessary dependencies
-> npm run build
-
 Run docker compose to up the images
 > docker compose up -d
 
